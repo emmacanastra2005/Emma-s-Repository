@@ -1,0 +1,21 @@
+{
+    "tests": [
+      {
+        "name": "Compilation Check",
+        "setup": "mkdir build && cd build && cmake ..",
+        "run": "cd build && make",
+        "comparison": "include",
+        "timeout": 2,
+        "points": 1
+      },
+      {
+        "name": "Check Output",
+        "setup": "",
+        "run": "./build/setup",
+        "comparison": "include",
+        "output": "Hello World",
+        "timeout": 1,
+        "points": 4
+      }
+    ]
+  }
